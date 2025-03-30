@@ -1,35 +1,17 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+.hero-image {
+  background-image: url("https://lh5.googleusercontent.com/CJ2_WcDUjp_hqsNPw174_KdAGrZDivk-rAGCIiZiOSWiYGGex0Qt2UIHzBtR4vkXm5g68GcaY4T2YQJKJs2OySc=w16383");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.glass-bg {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.container2 {
+  height: calc(100vh - 30vh);
 }
